@@ -16,8 +16,7 @@ def mushroom_color(hp):
 
 def on_segment_hit(segment, score):
     """Called whenever a centipede segment is shot; add sparkles, sounds, or bonus points here."""
-    pass
-
+    print(f"Segment hit at row {segment.row}, col {segment.col}! Score: {score}")
 
 def wave_speed_bonus(wave):
     """Return an extra tick-rate multiplier for centipede segments at the given wave, or None for the default speed."""
