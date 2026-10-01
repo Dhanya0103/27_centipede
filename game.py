@@ -10,8 +10,9 @@ MUSHROOM_HP = 4
 
 def mushroom_color(hp):
     """Return an (r, g, b) colour for a mushroom with the given hit points, or None for the default."""
-    pass
-
+    if hp == MUSHROOM_HP:
+        return None
+    return (255, 255, 255)
 
 def on_segment_hit(segment, score):
     """Called whenever a centipede segment is shot; add sparkles, sounds, or bonus points here."""
